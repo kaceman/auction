@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[x-cloak] { display: none !important; }
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background: #2D3748;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #CBD5E0;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #718096;
+}
+
+.object-cover {
+    object-fit: cover
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bg-orange-100 {
+    background-color: rgb(206 154 89 / 25%);
+}
+
+.text-orange-600 {
+    color: rgb(243, 137, 6);
+}
+
+.bg-green-100 {
+    background-color: rgb(125 206 89 / 25%);
+}
+
+.text-green-600 {
+    color: rgb(72 162 36);
+}
+
+#status-checkbox:checked + #status-button {
+    transform: translateX(20px);
+}
+
+#status-button.active{
+    background-color: #2fbd2f;
+    left: 20px;
+}
